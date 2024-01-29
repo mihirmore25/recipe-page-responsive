@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 54%, 90%);
+}
+
+.card {
+    height: auto;
+    width: 700px;
+    border: none;
+    margin: 100px 0px 100px 0px;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.image {
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 35px 0px 35px;
+}
+
+.image > img {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.recipe {
+    margin: 0px 35px 35px 35px;
+}
+
+.title {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: hsl(24, 5%, 18%);
+    margin-top: 30px;
+}
+
+.description {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+    margin-top: 20px;
+}
+
+.prepTime {
+    background-color: hsl(330, 100%, 98%);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.prepTime > h3 {
+    padding: 30px 30px 0px 30px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: hsl(332, 51%, 32%);
+}
+
+.timeList {
+    list-style: disc;
+    list-style-position: outside;
+    color: hsl(332, 51%, 32%);
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+}
+
+.timeList > li {
+    margin-top: 10px;
+}
+
+.timeList > li > p > span {
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    color: hsl(30, 10%, 34%);
+}
+
+.timeList > li > p {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+
+.ingredientList {
+    margin-top: 20px;
+    list-style: disc;
+    list-style-position: inside;
+    color: hsl(14, 45%, 36%);
+}
+
+.ingredientList > li > span {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+
+.ingredientList > li {
+    margin-bottom: 10px;
+}
+
+.ingredients > h3 {
+    font-family: "Young Serif", serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: hsl(14, 45%, 36%);
+}
+
+.ingredients {
+    margin-bottom: 30px;
+}
+
+.line {
+    border: solid hsl(30, 18%, 87%);
+    border-width: 0.1mm;
+}
+
+.instructionList {
+    list-style: decimal;
+    list-style-position: outside;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.instructions > h3 {
+    font-family: "Young Serif", serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: hsl(14, 45%, 36%);
+}
+
+.instructions {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.instructionList > li {
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 12px;
+}
+
+.instructionList > li > span > span {
+    color: hsl(30, 10%, 34%);
+    font-weight: 700;
+}
+
+.instructionList > li > span {
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+
+.nutrition > h3 {
+    font-family: "Young Serif", serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: hsl(14, 45%, 36%);
+    margin-top: 30px;
+}
+
+.nutrition > p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+
+.values {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+.text {
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+
+.num {
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(14, 45%, 36%);
+    text-align: left;
+}
+
+@media only screen and (width <= 550px) {
+    .card {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border: none;
+        border-radius: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .image {
+        margin: 0px;
+        height: auto;
+        width: 100%;
+    }
+}
